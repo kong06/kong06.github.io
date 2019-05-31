@@ -137,14 +137,6 @@ img.navbar-logo {
   width: auto;
   height: 100%;
 }
-.one-second-banner-con {
-  margin-top: 30px;
-}
-@media (min-width: 992px) {
-  .one-second-banner-con {
-    margin-top: 80px;
-  }
-}
 .one-second-body {
   background-color: #eaede6;
   overflow: hidden;
@@ -158,6 +150,11 @@ img.navbar-logo {
   min-height: 654px;
   object-fit: cover;
   display: block;
+}
+@media (min-width: 992px) {
+  .one-banner2 {
+    min-height: 500px;
+  }
 }
 .one-cards-section {
   margin-top: 30px;
@@ -248,4 +245,57 @@ img.navbar-logo {
 }
 .one-foot-container .pos-right .btn-group a {
   margin: 0 10px 0 0;
+}
+@media (min-width: 992px) {
+  .gap {
+    background: transparent center no-repeat;
+    background-size: cover;
+  }
+  .skrollr .gap {
+    background: transparent !important;
+  }
+  .gap-50 {
+    height: 50%;
+  }
+  .gap-100 {
+    height: 100%;
+  }
+  .parallax-image-wrapper {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .parallax-image-wrapper-50 {
+    height: 50%;
+    top: -50%;
+  }
+  .parallax-image-wrapper-100 {
+    height: 100%;
+    top: -100%;
+  }
+  .parallax-image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .parallax-image-50 {
+    height: 200%;
+    top: -50%;
+  }
+  .parallax-image-100 {
+    height: 100%;
+    top: 0;
+  }
+  .parallax-image.skrollable-between {
+    display: block;
+  }
+  .no-skrollr .parallax-image-wrapper {
+    display: none !important;
+  }
 }
